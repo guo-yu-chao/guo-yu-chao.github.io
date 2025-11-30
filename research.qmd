@@ -1,0 +1,27 @@
+---
+title: "Research"
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+
+
+&emsp;
+
+## RESEARCH DIRECTION 
+
+  - Polymer Mechanochemistry
+  - Development of novel mechanophores; 
+  - Regulation of polymer network topology;
+  - Enhancement of bulk material mechanical properties.
+
+&emsp;
+
+## SKILL
+
+  - Mechanophore synthesis; 
+  - Air-free and water-free techniques; 
+  - Polymerization methods including ATRP and SET-LRP; 
+  - Rheological testing; 
+  - Bulk material mechanical property testing.

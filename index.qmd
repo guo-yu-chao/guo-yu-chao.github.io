@@ -10,17 +10,17 @@ about:
     - icon: mailbox
       text: wyyyany@163.com
       href: mailto:wyyyany@163.com
-    - icon: github
-      text: arlionn
-      href: https://github.com/guo-yu-chao
-    - icon: 📝
-      text: Yuchao Guo_CV
-      href: Yuchao Guo_CV.pdf  
+    
+      
 ---
 
 ::: {#hero-heading}
 
-I am Guo Yuchao. I completed my undergraduate studies at Northeast Agricultural University and my master's degree in the research group of Professor Wenke Zhang at the National Key Laboratory of Supramolecular Structure and Materials, Jilin University. My main research direction is polymer force chemistry and the adjustment of the activation efficiency of force-sensitive groups based on the topological structure of polymer networks
+I am Yu-chao Guo. 
+
+I completed my undergraduate studies at Northeast Agricultural University and my master's degree in the research group of Professor Wenke Zhang at the National Key Laboratory of Supramolecular Structure and Materials, Jilin University. 
+
+My main research direction is Polymer Mechanochemistry and the adjustment of the activation efficiency of mechanophore based on the topological structure of polymer networks.
 
 
 ## Background
