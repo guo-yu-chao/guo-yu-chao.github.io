@@ -1,5 +1,8 @@
-+++
-date = '2026-07-05T15:42:06+08:00'
-draft = true
-title = 'Publications'
-+++
+---
+title: "Publications"
+draft: false
+---
+
+# Publications
+
+Publication list will be updated soon.

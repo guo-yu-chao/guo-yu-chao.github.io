@@ -1,6 +1,6 @@
 baseURL = "https://guo-yu-chao.github.io/"
 languageCode = "en-us"
-title = "Academic Homepage of Yu-Chao Guo"
+title = "Yu-Chao Guo"
 theme = "PaperMod"
 
 [pagination]
@@ -14,6 +14,7 @@ ShowShareButtons = false
 ShowPostNavLinks = false
 ShowBreadCrumbs = false
 ShowCodeCopyButtons = false
+homeInfoParams = false
 
 [menu]
 
@@ -44,5 +45,8 @@ weight = 40
 [[menu.main]]
 identifier = "cv"
 name = "CV"
-url = "/cv/"
+url = "/files/CV.pdf"
 weight = 50
+
+[params.assets]
+customCSS = ["css/extended.css"]

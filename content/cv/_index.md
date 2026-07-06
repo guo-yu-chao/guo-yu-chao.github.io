@@ -1,5 +1,12 @@
-+++
-date = '2026-07-05T15:42:06+08:00'
-draft = true
-title = 'Cv'
-+++
+---
+title: "CV"
+draft: false
+---
+
+# Curriculum Vitae
+
+My CV is available below.
+
+**Download CV (PDF)**
+
+*(PDF will be uploaded soon.)*
