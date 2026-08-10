@@ -1,31 +1,101 @@
 {{ define "main" }}
 <link rel="stylesheet" href="/css/extended.css">
 
-<div class="hero">
-    <div class="hero-content">
-
-        <img class="avatar" src="/images/profile.jpg" alt="Profile">
-        
-        <div class="text-content">
-            <h1>Academic Homepage of Yu-Chao Guo</h1>
-            <h3>Ph.D. Student</h3>
-            <p>
-                School of Chemistry Engineering and Technology<br>
-                Xi'an Jiaotong University
+<div class="academic-container">
+    <!-- 左侧 Profile Column -->
+    <div class="academic-sidebar">
+        <div class="profile-card">
+            <div class="avatar-container">
+                <img class="academic-avatar" src="/images/profile.jpg" alt="Yu-Chao Guo">
+            </div>
+            <h1 class="profile-name">Yu-Chao Guo</h1>
+            <p class="profile-title">Ph.D. Student</p>
+            <p class="profile-affiliation">
+                School of Chemical Engineering and Technology<br>
+                <strong>Xi'an Jiaotong University</strong>
             </p>
-            <div class="interest">
-                <div>Polymer Mechanochemistry</div>
-                <div>Network Topology Engineering</div>
-                <div>Toughening of Elastomers</div>
+            
+            <div class="profile-contact">
+                <a href="mailto:yuchaoguo@xjtu.edu.cn" class="contact-btn" title="Email">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    Email
+                </a>
+                <a href="/files/CV.pdf" target="_blank" class="contact-btn" title="Curriculum Vitae">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    CV
+                </a>
+            </div>
+
+            <div class="profile-interests">
+                <h3>Research Interests</h3>
+                <ul>
+                    <li>Polymer Mechanochemistry</li>
+                    <li>Network Topology Engineering</li>
+                    <li>Toughening of Elastomers</li>
+                </ul>
             </div>
         </div>
+    </div>
 
-        <div class="buttons">
-            <a href="/about/">About</a>
-            <a href="/research/">Research</a>
-            <a href="/publications/">Publications</a>
-            <a href="/files/CV.pdf" target="_blank">Download CV</a>
-        </div>
+    <!-- 右侧 Main Content Column -->
+    <div class="academic-content">
+        
+        <!-- About Section -->
+        <section class="section-block">
+            <h2 class="section-title">About Me</h2>
+            <div class="section-body">
+                <p>
+                    I am a Ph.D. student in Chemical Engineering at Xi'an Jiaotong University. 
+                    I received my B.Sc. degree in Chemistry from Northeast Agricultural University and my M.Sc. degree from the State Key Laboratory of Supramolecular Structure and Materials, Jilin University, under the supervision of Prof. Wenke Zhang.
+                </p>
+                <p>
+                    My current research focuses on <strong>polymer mechanochemistry</strong>, specifically investigating how polymer network topology regulates force transmission and mechanophore activation for designing high-performance, tough elastomeric materials.
+                </p>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="section-block">
+            <h2 class="section-title">Recent News</h2>
+            <div class="news-list">
+                <div class="news-item">
+                    <span class="news-date">Jul 2026</span>
+                    <span class="news-text">Integrated personal academic homepage with Obsidian digital workflow.</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">Sep 2024</span>
+                    <span class="news-text">Started Ph.D. journey at Xi'an Jiaotong University.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Highlights Section -->
+        <section class="section-block">
+            <h2 class="section-title">Research Focus</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h4>Polymer Mechanochemistry</h4>
+                    <p>Understanding force-induced chemical bond cleavage and reactions in macromolecular systems.</p>
+                </div>
+                <div class="research-card">
+                    <h4>Network Topology Regulation</h4>
+                    <p>Engineering crosslinks and entanglements to dictate stress propagation and mechanophore activation.</p>
+                </div>
+                <div class="research-card">
+                    <h4>Toughening of Elastomers</h4>
+                    <p>Developing resilient, damage-reporting elastomeric materials via mechanochemical strategies.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section class="section-block">
+            <h2 class="section-title">Selected Publications</h2>
+            <div class="section-body">
+                <p class="text-muted">Publication list is being updated. Full papers will be listed shortly.</p>
+                <a href="/publications/" class="link-more">View all publications &rarr;</a>
+            </div>
+        </section>
 
     </div>
 </div>

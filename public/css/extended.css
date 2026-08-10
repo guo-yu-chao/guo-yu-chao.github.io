@@ -1,163 +1,290 @@
 /* ==========================================
-   1. 首页大图背景区（全局铺满、带暗色遮罩）
+   Modern Academic Theme Styling (Clean & Prestigious)
    ========================================== */
-.hero {
-    position: relative;
-    width: 100vw;
-    min-height: calc(100vh - 60px);
-    margin-left: calc(50% - 50vw);
-    box-sizing: border-box;
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("/images/banner.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-}
 
-/* 居中的主内容容器 */
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    max-width: 900px;
-    z-index: 1;
-}
-
-/* 长方形头像（保持你最满意的自定义尺寸） */
-.avatar {
-    width: 600px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 12px;
-    border: 4px solid white;
-    margin-bottom: 25px;
-}
-
-/* ==========================================
-   2. 首页文本样式与居中对齐（强制纯白）
-   ========================================== */
-.text-content {
-    text-align: center;
-    color: white;
-}
-
-.text-content h1 {
-    margin: 0 0 10px 0;
-    font-size: 36px;
-    color: white;
-}
-
-.text-content h3 {
-    margin: 0 0 15px 0;
-    font-weight: 400;
-    opacity: 0.9;
-    font-size: 22px;
-    color: white;
-}
-
-.text-content p {
-    margin: 0 0 20px 0;
+/* 全局布局与背景 */
+body {
+    background-color: #fcfcfc;
+    color: #2c3e50;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
-    color: white;
-    font-size: 16px;
 }
 
-/* 兴趣标签 */
-.interest {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 30px;
-    font-weight: 500;
-    flex-wrap: wrap;
-    color: white;
+.main {
+    max-width: 1140px !important;
+    margin: 0 auto !important;
+    padding: 40px 20px !important;
 }
 
-
-/* ==========================================
-   3. 顶部导航栏样式（绝对强制：学术深蓝背景 + 纯白字体）
-   ========================================== */
- header.header {
-    background: rgba(15, 45, 90, 0.95) !important; /* 强制背景为深蓝 */
-    backdrop-filter: blur(10px);
-    border-bottom: none !important; 
-    box-shadow: none !important;
+/* 顶部导航栏 - 清爽学术蓝 */
+header.header {
+    background: #0f2d5a !important; /* 学术深蓝 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
     margin-bottom: 0 !important;
 }
 
-/* 用通配符 * 强制导航栏里面的每一个元素（包含 Logo、菜单、文字）统统变成纯白 */
 header.header, 
 header.header * {
-    color: #ffffff !important; 
-    fill: #ffffff !important; /* 如果有SVG图标也强制变白 */
-    transition: color 0.2s ease;
+    color: #ffffff !important;
+    fill: #ffffff !important;
 }
 
-/* 导航栏鼠标悬停：强制变为浅蓝色 */
-header.header a:hover,
-header.header a:hover span {
-    color: #6cb6ff !important; 
+header.header a:hover {
+    color: #9eccff !important;
 }
 
-/* 修复当前所在页面（Active 状态）底部的下划线，强制变白 */
-.nav .menu .active {
-    border-bottom: 2px solid #ffffff !important;
+/* 双栏布局 Container */
+.academic-container {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    margin-top: 10px;
 }
 
-/* ==========================================
-   4. 底部快捷导航按钮（学术深蓝 / 强制不换行）
-   ========================================== */
-.buttons {
+/* 左侧 Sidebar (个人 Card) */
+.academic-sidebar {
+    flex: 0 0 280px;
+    position: sticky;
+    top: 20px;
+    background: #ffffff;
+    padding: 30px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eef2f6;
+    text-align: center;
+}
+
+/* 全身/大立像照片适应框 (比例自然，Top对齐) */
+.avatar-container {
+    width: 200px;
+    height: 250px;
+    margin: 0 auto 20px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 3px solid #ffffff;
+    background-color: #f0f4f8;
+}
+
+.academic-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center; /* 专门针对全身照：保持头部和上半身在视觉中心 */
+    display: block;
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2530;
+    margin: 0 0 6px 0;
+}
+
+.profile-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0f2d5a;
+    margin: 0 0 12px 0;
+}
+
+.profile-affiliation {
+    font-size: 14px;
+    color: #5a6a7e;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eef2f6;
+}
+
+.profile-contact {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    width: 100%;
-    flex-wrap: nowrap; /* 核心：强制不换行 */
+    gap: 10px;
+    margin-bottom: 24px;
 }
 
-.buttons a {
+.contact-btn {
     display: inline-flex;
-    justify-content: center;
     align-items: center;
-    padding: 12px 24px;
-    background: rgba(15, 45, 90, 0.9);
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-size: 15px;
+    gap: 6px;
+    padding: 6px 14px;
+    font-size: 13px;
     font-weight: 500;
+    color: #0f2d5a;
+    background: #f0f4f9;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.contact-btn:hover {
+    background: #0f2d5a;
+    color: #ffffff;
+}
+
+.profile-interests {
+    text-align: left;
+}
+
+.profile-interests h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #8c9ba5;
+    margin-bottom: 10px;
+}
+
+.profile-interests ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 13.5px;
+    color: #34495e;
+}
+
+.profile-interests li {
+    padding: 4px 0;
+    position: relative;
+    padding-left: 14px;
+}
+
+.profile-interests li::before {
+    content: "•";
+    color: #0f2d5a;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* 右侧 Main Content */
+.academic-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.section-block {
+    background: #ffffff;
+    padding: 28px 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid #eef2f6;
+    margin-bottom: 28px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f2d5a;
+    margin-top: 0;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #eef2f6;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #0f2d5a;
+}
+
+.section-body {
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: #34495e;
+}
+
+.section-body p {
+    margin-bottom: 12px;
+}
+
+/* News List */
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.news-item {
+    display: flex;
+    gap: 16px;
+    font-size: 14.5px;
+}
+
+.news-date {
+    font-weight: 600;
+    color: #0f2d5a;
+    background: #eef4fc;
+    padding: 2px 8px;
+    border-radius: 4px;
     white-space: nowrap;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    height: fit-content;
 }
 
-/* 按钮鼠标悬停提亮 */
-.buttons a:hover {
-    background: rgba(25, 75, 140, 1); 
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
-    border-color: rgba(255, 255, 255, 0.4);
+.news-text {
+    color: #4a5568;
 }
 
-/* ==========================================
-   5. 布局细节修正（消除顶部白边缝隙）
-   ========================================== */
-.main {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
+/* Research Grid */
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
 }
 
-/* ==========================================
-   6. 移动端适配保护
-   ========================================== */
-@media (max-width: 600px) {
-    .buttons {
-        flex-wrap: wrap; 
+.research-card {
+    background: #f8fafc;
+    padding: 18px;
+    border-radius: 8px;
+    border-left: 4px solid #0f2d5a;
+}
+
+.research-card h4 {
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    color: #1a2530;
+}
+
+.research-card p {
+    margin: 0;
+    font-size: 13.5px;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.text-muted {
+    color: #8c9ba5;
+    font-style: italic;
+}
+
+.link-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0f2d5a;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.link-more:hover {
+    text-decoration: underline;
+}
+
+/* 响应式支持（手机屏自适应单栏） */
+@media (max-width: 868px) {
+    .academic-container {
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .academic-sidebar {
+        flex: 1 1 100%;
+        width: 100%;
+        position: static;
     }
 }
