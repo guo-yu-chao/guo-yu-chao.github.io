@@ -12,13 +12,13 @@ disableAnchoredHeadings: true
 
 <div class="thrust-card">
   <div class="thrust-img-wrapper">
-    <img src="/images/research_1.jpg" alt="Mechanophore Activation & Reaction Control">
+    <img src="/images/research_1.jpg" alt="Polymer Mechanochemistry">
   </div>
   <div class="thrust-info">
-    <h3>1. Mechanophore Activation & Reaction Control</h3>
-    <p class="thrust-sub"><em>力致响应分子与化学反应调控</em></p>
+    <h3>1. Polymer Mechanochemistry</h3>
+    <p class="thrust-sub"><em>高分子力化学</em></p>
     <ul>
-      <li><strong>Mechanophore Kinetics under Force</strong>: Investigating mechanical tension-induced bond cleavage, conformational transition, and energy barrier alterations in functional mechanophores.</li>
+      <li><strong>Mechanophore Activation & Force Kinetics</strong>: Investigating mechanical tension-induced bond cleavage, conformational transition, and energy barrier alterations in functional mechanophores.</li>
       <li><strong>Visualizing Molecular Stress Transfer</strong>: Utilizing mechanofluorescent/chromic probes to dynamically visualize microscopic stress distribution, stress concentration, and chain scission in polymer networks.</li>
     </ul>
   </div>
@@ -44,13 +44,13 @@ disableAnchoredHeadings: true
 
 <div class="thrust-card">
   <div class="thrust-img-wrapper">
-    <img src="/images/research_3.jpg" alt="Resilient & Damage-Reporting Elastomers">
+    <img src="/images/research_3.jpg" alt="Mechanochemical Toughening & Resilient Elastomers">
   </div>
   <div class="thrust-info">
-    <h3>3. Resilient & Damage-Reporting Elastomers</h3>
-    <p class="thrust-sub"><em>高韧性与早期损伤预警弹性体</em></p>
+    <h3>3. Mechanochemical Toughening & Resilient Elastomers</h3>
+    <p class="thrust-sub"><em>力化学增韧与高弹性体</em></p>
     <ul>
-      <li><strong>Mechanochemical Toughening & Energy Dissipation</strong>: Incorporating dynamic mechanochemical bonds and multi-hierarchical crosslinks to enhance fracture toughness and fatigue resistance.</li>
+      <li><strong>Mechanical Modes & Network Dynamics</strong>: Exploring polymer network structural rearrangements and dynamic bond dissipation across stretching, compression, friction, and puncturing modes.</li>
       <li><strong>Smart Self-Reporting Materials</strong>: Developing intelligent elastomeric materials with early micro-crack self-reporting, sensing, and self-healing capabilities for advanced engineering applications.</li>
     </ul>
   </div>
