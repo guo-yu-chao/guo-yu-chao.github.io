@@ -50,7 +50,7 @@ disableAnchoredHeadings: true
     <div class="thrust-info">
       <h3>3. Mechanochemical Toughening & Resilient Elastomers</h3>
       <ul>
-        <li><strong>Mechanochemical Toughening & Energy Dissipation</strong>: Exploring energy dissipation pathways (chain sliding, sacrificial bond scission, tearing resistance) under tensile and friction modes without compression.</li>
+        <li><strong>Mechanochemical Toughening & Energy Dissipation</strong>: Exploring energy dissipation pathways (chain sliding, sacrificial bond scission, tearing resistance) under mechanical stress.</li>
         <li><strong>Smart Self-Reporting Materials</strong>: Developing intelligent elastomeric materials with early micro-crack self-reporting, sensing, and self-healing capabilities for advanced engineering applications.</li>
       </ul>
     </div>
