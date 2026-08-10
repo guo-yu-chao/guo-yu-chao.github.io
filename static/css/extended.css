@@ -66,13 +66,13 @@ header.header a:hover {
     margin-bottom: 28px;
 }
 
-/* 左侧正方形头像框 */
+/* 左侧正方形头像框 (加大尺寸对齐红色标注框) */
 .avatar-square-frame {
-    width: 190px;
-    height: 190px;
-    border-radius: 12px;
+    width: 250px;
+    height: 250px;
+    border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
     border: 3px solid #ffffff;
     background-color: #f1f5f9;
     flex-shrink: 0;
