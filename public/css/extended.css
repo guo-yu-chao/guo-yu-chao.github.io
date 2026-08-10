@@ -49,8 +49,7 @@ header.header a:hover {
     color: #93c5fd !important;
 }
 
-/* 全局沉浸式山水衬底背景 (Fixed Substrate Background)
-   固定在页面底层，左右露出山水风貌，中间卡片滚动时覆盖滑动 */
+/* 全局沉浸式山水衬底背景 (Fixed Substrate Background) */
 .full-page-landscape-bg {
     position: fixed;
     top: 0;
@@ -76,7 +75,7 @@ header.header a:hover {
     z-index: 10;
 }
 
-/* 1. 顶部 Header Card：白底浮动卡片（左右漏出背景山水） */
+/* 1. 顶部 Header Card：白底浮动卡片 */
 .profile-header-card {
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(12px);
@@ -90,7 +89,7 @@ header.header a:hover {
     margin-bottom: 28px;
 }
 
-/* 左侧正方形头像框 (精确对齐红色标注框) */
+/* 左侧正方形头像框 */
 .header-left {
     flex: 0 0 260px;
 }
@@ -112,7 +111,7 @@ header.header a:hover {
     object-position: center top;
 }
 
-/* 右侧信息区 (精确对齐蓝色标注框) */
+/* 右侧信息区 */
 .header-right {
     flex: 1;
     min-width: 0;
@@ -268,6 +267,85 @@ header.header a:hover {
     background: var(--brand-navy);
 }
 
+/* --- Research Page & Vision Quote (Liu Group Style & Blue Left Border) --- */
+.research-vision-quote {
+    border-left: 4px solid var(--brand-blue);
+    padding: 16px 20px;
+    background: #f8fafc;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 28px;
+    font-size: 15.5px;
+    line-height: 1.8;
+    color: var(--text-body);
+}
+
+.research-thrusts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 20px;
+}
+
+.thrust-card {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 28px;
+    align-items: start;
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.thrust-img-wrapper {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border-color);
+}
+
+.thrust-img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.thrust-info h3 {
+    font-family: var(--font-serif);
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--brand-navy);
+    margin: 0 0 4px 0;
+}
+
+.thrust-sub {
+    color: var(--brand-accent);
+    font-size: 14px;
+    margin: 0 0 14px 0;
+    font-weight: 500;
+}
+
+.thrust-info ul {
+    padding-left: 20px;
+    margin: 0;
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: var(--text-body);
+}
+
+.thrust-info li {
+    margin-bottom: 8px;
+}
+
+.thrust-divider {
+    border: none;
+    border-top: 1px dashed var(--border-color);
+    margin: 8px 0;
+}
+
 .card-body-text {
     font-size: 15.5px;
     line-height: 1.75;
@@ -418,5 +496,9 @@ header.header a:hover {
         flex-direction: column;
         gap: 4px;
         align-items: center;
+    }
+
+    .thrust-card {
+        grid-template-columns: 1fr;
     }
 }
