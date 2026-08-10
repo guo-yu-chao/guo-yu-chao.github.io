@@ -1,33 +1,32 @@
 /* ======================================================
-   US Ivy League Academic Typography & Palette Design
-   Color Scheme: Deep Navy (#142850), Slate (#27496D), Crimson/Warm Accent (#800020), Soft Cream Background (#F9F9FB)
+   Academic Homepage Styling (Top Left Avatar + Top Right Bio/Edu + Bottom Content)
    ====================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap');
 
 :root {
-    --ivy-navy: #142850;
-    --ivy-blue: #004085;
-    --ivy-accent: #0056b3;
-    --ivy-dark: #1e293b;
-    --ivy-body: #334155;
-    --ivy-bg: #f8fafc;
-    --ivy-card-bg: #ffffff;
-    --ivy-border: #e2e8f0;
+    --brand-navy: #142850;
+    --brand-blue: #004085;
+    --brand-accent: #0056b3;
+    --text-dark: #1e293b;
+    --text-body: #334155;
+    --bg-main: #f8fafc;
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
     --font-serif: 'Merriweather', Georgia, serif;
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
-    background-color: var(--ivy-bg);
-    color: var(--ivy-body);
+    background-color: var(--bg-main);
+    color: var(--text-body);
     font-family: var(--font-sans);
     line-height: 1.7;
     font-size: 15px;
     -webkit-font-smoothing: antialiased;
 }
 
-/* 顶部导航栏 - Ivy Crimson/Navy Design */
+/* 顶部通用 Header 导航条 */
 header.header {
     background: #142850 !important;
     border-bottom: 3px solid #0056b3 !important;
@@ -44,318 +43,293 @@ header.header a:hover {
     color: #93c5fd !important;
 }
 
-/* 主容器约束 */
 .main {
-    max-width: 1120px !important;
+    max-width: 1040px !important;
     margin: 0 auto !important;
-    padding: 36px 20px !important;
+    padding: 32px 20px !important;
 }
 
-.ivy-wrapper {
+.academic-page-container {
     width: 100%;
 }
 
-.ivy-grid {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 48px;
-    align-items: start;
-}
-
-/* 左侧 Profile Sidebar */
-.ivy-sidebar {
-    position: sticky;
-    top: 24px;
-}
-
-.profile-card {
-    background: var(--ivy-card-bg);
-    border: 1px solid var(--ivy-border);
+/* 1. 顶部 Header Card：左侧正方形头像 + 右侧个人简介与教育背景 */
+.profile-header-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
     border-radius: 12px;
-    padding: 28px 24px;
-    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+    padding: 32px;
+    display: flex;
+    gap: 36px;
+    align-items: flex-start;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+    margin-bottom: 28px;
 }
 
-/* 头像框 - 竖版全身照专优化 */
-.avatar-frame {
-    width: 210px;
-    height: 270px;
-    margin: 0 auto 20px auto;
-    border-radius: 8px;
+/* 左侧正方形头像框 */
+.avatar-square-frame {
+    width: 190px;
+    height: 190px;
+    border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
     border: 3px solid #ffffff;
     background-color: #f1f5f9;
+    flex-shrink: 0;
 }
 
-.profile-img {
+.avatar-square-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top center; /* 精确锁定头部与上半身 */
+    object-position: center top;
 }
 
-.profile-name {
+/* 右侧信息区 */
+.header-right {
+    flex: 1;
+    min-width: 0;
+}
+
+.academic-name {
     font-family: var(--font-serif);
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
-    color: var(--ivy-navy);
+    color: var(--brand-navy);
     margin: 0 0 6px 0;
-    text-align: center;
 }
 
-.profile-degree {
-    font-size: 13.5px;
+.academic-title {
+    font-size: 15px;
     font-weight: 600;
-    color: var(--ivy-blue);
-    margin: 0 0 10px 0;
-    text-align: center;
+    color: var(--brand-blue);
+    margin: 0 0 6px 0;
 }
 
-.profile-org {
-    font-size: 13px;
+.academic-org {
+    font-size: 14px;
     color: #64748b;
-    text-align: center;
-    line-height: 1.45;
-    margin-bottom: 20px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid var(--ivy-border);
+    margin: 0 0 16px 0;
+    line-height: 1.5;
 }
 
-/* Icon 联系按钮栏 */
-.social-links {
+/* 联系链接图标按钮 */
+.contact-links-row {
     display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.social-icon {
+.contact-btn {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    width: 38px;
-    height: 38px;
+    gap: 6px;
+    padding: 5px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--brand-navy);
     background: #f1f5f9;
-    color: var(--ivy-navy);
-    border-radius: 50%;
-    font-size: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
     text-decoration: none;
     transition: all 0.2s ease;
 }
 
-.social-icon:hover {
-    background: var(--ivy-navy);
+.contact-btn:hover {
+    background: var(--brand-navy);
     color: #ffffff;
-    transform: translateY(-2px);
+    border-color: var(--brand-navy);
 }
 
-/* Sidebar 小工具区 */
-.sidebar-widget {
-    margin-top: 20px;
-    padding-top: 16px;
-    border-top: 1px solid var(--ivy-border);
+/* 教育背景区块 */
+.edu-section {
+    padding-top: 14px;
+    border-top: 1px solid var(--border-color);
 }
 
-.widget-title {
-    font-size: 12px;
+.edu-title {
+    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.6px;
     color: #94a3b8;
-    margin-bottom: 12px;
+    margin: 0 0 10px 0;
 }
 
-.interest-tags {
+.edu-title i {
+    margin-right: 4px;
+    color: var(--brand-navy);
+}
+
+.edu-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-}
-
-.interest-tags li {
-    font-size: 12px;
-    font-weight: 500;
-    background: #eff6ff;
-    color: #1e40af;
-    padding: 4px 10px;
-    border-radius: 4px;
-    border: 1px solid #dbeafe;
-}
-
-/* 教育经历列表 */
-.edu-timeline {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 12.5px;
-}
-
-.edu-timeline li {
-    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
+    gap: 6px;
+    font-size: 13.5px;
 }
 
-.edu-degree {
+.edu-list li {
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+}
+
+.edu-year {
     font-weight: 600;
-    color: var(--ivy-dark);
+    color: var(--brand-navy);
+    font-size: 12.5px;
+    background: #eff6ff;
+    padding: 1px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
 }
 
-.edu-school {
-    color: #64748b;
+.edu-desc {
+    color: #334155;
 }
 
-.edu-detail {
-    color: #94a3b8;
-    font-style: italic;
+/* 2. 下方主内容区 Sections */
+.main-sections-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
-/* 右侧 Main Sections */
-.ivy-main {
-    min-width: 0;
-}
-
-.ivy-section {
-    background: var(--ivy-card-bg);
-    border: 1px solid var(--ivy-border);
+.content-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
     border-radius: 12px;
-    padding: 32px 36px;
-    margin-bottom: 28px;
+    padding: 30px 36px;
     box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
 }
 
-.ivy-heading {
+.card-heading {
     font-family: var(--font-serif);
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
-    color: var(--ivy-navy);
+    color: var(--brand-navy);
     margin-top: 0;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
     border-bottom: 2px solid #f1f5f9;
     position: relative;
 }
 
-.ivy-heading::after {
+.card-heading::after {
     content: "";
     position: absolute;
     bottom: -2px;
     left: 0;
-    width: 45px;
+    width: 40px;
     height: 2px;
-    background: var(--ivy-navy);
+    background: var(--brand-navy);
 }
 
-.ivy-bio-text {
+.card-body-text {
     font-size: 15.5px;
-    color: var(--ivy-body);
     line-height: 1.75;
+    color: var(--text-body);
 }
 
-.ivy-bio-text p {
-    margin-bottom: 14px;
+.card-body-text p {
+    margin-bottom: 12px;
 }
 
-/* News 列表美式简洁风 */
-.ivy-news-list {
+/* News 时间线 */
+.news-timeline {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 12px;
 }
 
-.ivy-news-item {
+.news-row {
     display: flex;
-    align-items: baseline;
     gap: 16px;
+    align-items: baseline;
     font-size: 14.5px;
 }
 
-.ivy-news-badge {
-    font-family: var(--font-sans);
+.news-badge {
     font-size: 12px;
     font-weight: 700;
-    color: var(--ivy-navy);
+    color: var(--brand-navy);
     background: #f1f5f9;
-    padding: 3px 10px;
+    border: 1px solid #e2e8f0;
+    padding: 2px 8px;
     border-radius: 4px;
     white-space: nowrap;
-    border: 1px solid #e2e8f0;
 }
 
-.ivy-news-content {
+.news-detail {
     color: #334155;
 }
 
-/* Research Thrusts Cards */
-.ivy-research-grid {
+/* Research Areas 网格 */
+.research-cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
 }
 
-.ivy-research-card {
+.research-box {
     background: #f8fafc;
     border: 1px solid #e2e8f0;
     border-radius: 8px;
-    padding: 20px;
+    padding: 18px;
     transition: all 0.2s ease;
 }
 
-.ivy-research-card:hover {
+.research-box:hover {
     border-color: #cbd5e1;
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
 }
 
-.card-icon {
-    font-size: 20px;
-    color: var(--ivy-navy);
-    margin-bottom: 10px;
+.box-icon {
+    font-size: 18px;
+    color: var(--brand-navy);
+    margin-bottom: 8px;
 }
 
-.ivy-research-card h3 {
+.research-box h4 {
     font-size: 15px;
     font-weight: 600;
-    color: var(--ivy-dark);
-    margin: 0 0 8px 0;
+    color: var(--text-dark);
+    margin: 0 0 6px 0;
 }
 
-.ivy-research-card p {
+.research-box p {
     font-size: 13.5px;
     color: #64748b;
     margin: 0;
-    line-height: 1.55;
+    line-height: 1.5;
 }
 
-/* Publications Block */
-.ivy-pub-placeholder {
+/* Publications 占位符 */
+.pub-placeholder-box {
     background: #f8fafc;
     border: 1px dashed #cbd5e1;
     border-radius: 8px;
-    padding: 24px;
+    padding: 20px;
     text-align: center;
 }
 
-.pub-note {
+.pub-placeholder-box p {
     color: #64748b;
     font-size: 14px;
-    margin: 0 0 16px 0;
+    margin: 0 0 14px 0;
 }
 
-.pub-note i {
-    margin-right: 6px;
-    color: var(--ivy-navy);
-}
-
-.ivy-link-btn {
+.view-all-btn {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 8px 18px;
-    background: var(--ivy-navy);
+    gap: 6px;
+    padding: 7px 16px;
+    background: var(--brand-navy);
     color: #ffffff !important;
     border-radius: 6px;
     font-size: 13.5px;
@@ -364,24 +338,31 @@ header.header a:hover {
     transition: all 0.2s ease;
 }
 
-.ivy-link-btn:hover {
+.view-all-btn:hover {
     background: #0f172a;
-    transform: translateY(-1px);
 }
 
 /* 响应式 Mobile 适配 */
-@media (max-width: 900px) {
-    .ivy-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
+@media (max-width: 768px) {
+    .profile-header-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 24px;
     }
     
-    .ivy-sidebar {
-        position: static;
+    .avatar-square-frame {
+        width: 160px;
+        height: 160px;
     }
     
-    .avatar-frame {
-        width: 180px;
-        height: 230px;
+    .contact-links-row {
+        justify-content: center;
+    }
+    
+    .edu-list li {
+        flex-direction: column;
+        gap: 4px;
+        align-items: center;
     }
 }
