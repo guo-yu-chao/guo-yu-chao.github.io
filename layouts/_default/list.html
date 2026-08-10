@@ -1,0 +1,20 @@
+{{- define "main" }}
+
+{{- if .Title }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description | markdownify }}
+  </div>
+  {{- end }}
+</header>
+{{- end }}
+
+<div class="content-card">
+  <div class="post-content md-content">
+    {{ .Content }}
+  </div>
+</div>
+
+{{- end }}
