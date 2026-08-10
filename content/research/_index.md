@@ -4,7 +4,7 @@ draft: false
 disableAnchoredHeadings: true
 ---
 
-> *"Polymer materials under mechanical stress experience non-uniform force distribution at the molecular level, often leading to premature failure and fatigue. My research lies at the intersection of **macromolecular chemistry**, **mechanochemistry**, and **network topology engineering**. By integrating covalent/non-covalent mechanophores into tailored polymer architectures, I aim to visualize molecular stress transfer, rationally control force-induced chemical transformations, and design high-performance, damage-reporting, and resilient elastomeric materials."*
+> *"Polymer materials under mechanical stress experience non-uniform force distribution at the molecular level, often leading to premature failure and fatigue. My research lies at the intersection of **polymer chemistry**, **mechanochemistry**, and **network topology engineering**. By integrating covalent/non-covalent mechanophores into tailored polymer architectures, I aim to visualize molecular stress transfer, rationally control force-induced chemical transformations, and design high-performance, damage-reporting, and resilient elastomeric materials."*
 
 ---
 
