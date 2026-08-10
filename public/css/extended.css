@@ -90,7 +90,11 @@ header.header a:hover {
     margin-bottom: 28px;
 }
 
-/* 左侧正方形头像框 (250px x 250px 大尺寸) */
+/* 左侧正方形头像框 (精确对齐红色标注框) */
+.header-left {
+    flex: 0 0 260px;
+}
+
 .avatar-square-frame {
     width: 250px;
     height: 250px;
@@ -99,7 +103,6 @@ header.header a:hover {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     border: 4px solid #ffffff;
     background-color: #f1f5f9;
-    flex-shrink: 0;
 }
 
 .avatar-square-img {
@@ -109,10 +112,11 @@ header.header a:hover {
     object-position: center top;
 }
 
-/* 右侧信息区 */
+/* 右侧信息区 (精确对齐蓝色标注框) */
 .header-right {
     flex: 1;
     min-width: 0;
+    padding-left: 10px;
 }
 
 .academic-name {
