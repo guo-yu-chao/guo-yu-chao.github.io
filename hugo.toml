@@ -1,5 +1,5 @@
 baseURL = "https://guo-yu-chao.github.io/"
-languageCode = "en-us"
+locale = "en-us"
 title = "Yu-Chao Guo"
 theme = "PaperMod"
 

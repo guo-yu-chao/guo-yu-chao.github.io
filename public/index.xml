@@ -2,10 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Home on Yu-Chao Guo</title>
-    <link>http://localhost:1313/</link>
+    <link>https://guo-yu-chao.github.io/</link>
     <description>Recent content in Home on Yu-Chao Guo</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://guo-yu-chao.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://guo-yu-chao.github.io/readme_%E4%B8%BB%E9%A1%B5%E7%BB%B4%E6%8A%A4%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://guo-yu-chao.github.io/readme_%E4%B8%BB%E9%A1%B5%E7%BB%B4%E6%8A%A4%E6%8C%87%E5%8D%97/</guid>
+      <description>&lt;h1 id=&#34;-个人主页维护与发布指南-obsidian-workflow&#34;&gt;🌐 个人主页维护与发布指南 (Obsidian Workflow)&lt;/h1&gt;
+&lt;p&gt;欢迎使用 Obsidian 维护个人学术主页！你的主页源码与内容现已全面集成至 &lt;code&gt;PhD Demo&lt;/code&gt; 工作区及 Obsidian Vault 中。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-目录结构说明&#34;&gt;📁 目录结构说明&lt;/h2&gt;
+&lt;p&gt;你在 Obsidian 中看到此文档时，主页的所有 MD 文章内容均实时映射在目录 &lt;code&gt;06_个人主页_Homepage&lt;/code&gt; 下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;06_个人主页_Homepage/about/_index.md&lt;/code&gt;&lt;/strong&gt;：关于我 (About Me, 毕业院校、研究方向、个人简介)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;06_个人主页_Homepage/research/_index.md&lt;/code&gt;&lt;/strong&gt;：研究方向 (Research Focus &amp;amp; Topology Engineering)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;06_个人主页_Homepage/publications/_index.md&lt;/code&gt;&lt;/strong&gt;：学术论文与发表列表 (Publications)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;06_个人主页_Homepage/news/_index.md&lt;/code&gt;&lt;/strong&gt;：学术动态与博客 (News &amp;amp; Blog)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;06_个人主页_Homepage/cv/_index.md&lt;/code&gt;&lt;/strong&gt;：个人简历相关配置 (CV)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-如何在-obsidian-中更新主页&#34;&gt;✏️ 如何在 Obsidian 中更新主页&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;直接编辑文章&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;打开 &lt;code&gt;06_个人主页_Homepage&lt;/code&gt; 文件夹下的任意 &lt;code&gt;.md&lt;/code&gt; 文件。&lt;/li&gt;
+&lt;li&gt;直接修改文本、添加新的论文、课题或 News 动态。&lt;/li&gt;
+&lt;li&gt;保留文件开头的 Frontmatter（即 &lt;code&gt;--- title: &amp;quot;xxx&amp;quot; ---&lt;/code&gt; 部分）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;添加简历或图片&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PDF 简历文件存放于 &lt;code&gt;academic-homepage/static/files/CV.pdf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;头像与 Banner 图片存放于 &lt;code&gt;academic-homepage/static/images/&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-编译预览与发布到-github-pages&#34;&gt;🚀 编译预览与发布到 GitHub Pages&lt;/h2&gt;
+&lt;p&gt;在终端或使用 Python 脚本均可一键完成编译发布：&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
