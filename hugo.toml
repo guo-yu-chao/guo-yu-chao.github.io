@@ -16,6 +16,11 @@ ShowBreadCrumbs = false
 ShowCodeCopyButtons = false
 homeInfoParams = false
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [menu]
 
 [[menu.main]]
