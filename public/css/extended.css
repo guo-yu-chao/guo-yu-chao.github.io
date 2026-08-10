@@ -1,290 +1,387 @@
-/* ==========================================
-   Modern Academic Theme Styling (Clean & Prestigious)
-   ========================================== */
+/* ======================================================
+   US Ivy League Academic Typography & Palette Design
+   Color Scheme: Deep Navy (#142850), Slate (#27496D), Crimson/Warm Accent (#800020), Soft Cream Background (#F9F9FB)
+   ====================================================== */
 
-/* 全局布局与背景 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+:root {
+    --ivy-navy: #142850;
+    --ivy-blue: #004085;
+    --ivy-accent: #0056b3;
+    --ivy-dark: #1e293b;
+    --ivy-body: #334155;
+    --ivy-bg: #f8fafc;
+    --ivy-card-bg: #ffffff;
+    --ivy-border: #e2e8f0;
+    --font-serif: 'Merriweather', Georgia, serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
 body {
-    background-color: #fcfcfc;
-    color: #2c3e50;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.6;
+    background-color: var(--ivy-bg);
+    color: var(--ivy-body);
+    font-family: var(--font-sans);
+    line-height: 1.7;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
 }
 
-.main {
-    max-width: 1140px !important;
-    margin: 0 auto !important;
-    padding: 40px 20px !important;
-}
-
-/* 顶部导航栏 - 清爽学术蓝 */
+/* 顶部导航栏 - Ivy Crimson/Navy Design */
 header.header {
-    background: #0f2d5a !important; /* 学术深蓝 */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
-    margin-bottom: 0 !important;
+    background: #142850 !important;
+    border-bottom: 3px solid #0056b3 !important;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08) !important;
 }
 
 header.header, 
 header.header * {
     color: #ffffff !important;
-    fill: #ffffff !important;
+    font-weight: 500;
 }
 
 header.header a:hover {
-    color: #9eccff !important;
+    color: #93c5fd !important;
 }
 
-/* 双栏布局 Container */
-.academic-container {
-    display: flex;
+/* 主容器约束 */
+.main {
+    max-width: 1120px !important;
+    margin: 0 auto !important;
+    padding: 36px 20px !important;
+}
+
+.ivy-wrapper {
+    width: 100%;
+}
+
+.ivy-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
     gap: 48px;
-    align-items: flex-start;
-    margin-top: 10px;
+    align-items: start;
 }
 
-/* 左侧 Sidebar (个人 Card) */
-.academic-sidebar {
-    flex: 0 0 280px;
+/* 左侧 Profile Sidebar */
+.ivy-sidebar {
     position: sticky;
-    top: 20px;
-    background: #ffffff;
-    padding: 30px 24px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    border: 1px solid #eef2f6;
-    text-align: center;
+    top: 24px;
 }
 
-/* 全身/大立像照片适应框 (比例自然，Top对齐) */
-.avatar-container {
-    width: 200px;
-    height: 250px;
+.profile-card {
+    background: var(--ivy-card-bg);
+    border: 1px solid var(--ivy-border);
+    border-radius: 12px;
+    padding: 28px 24px;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+/* 头像框 - 竖版全身照专优化 */
+.avatar-frame {
+    width: 210px;
+    height: 270px;
     margin: 0 auto 20px auto;
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
     border: 3px solid #ffffff;
-    background-color: #f0f4f8;
+    background-color: #f1f5f9;
 }
 
-.academic-avatar {
+.profile-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top center; /* 专门针对全身照：保持头部和上半身在视觉中心 */
-    display: block;
+    object-position: top center; /* 精确锁定头部与上半身 */
 }
 
 .profile-name {
+    font-family: var(--font-serif);
     font-size: 24px;
     font-weight: 700;
-    color: #1a2530;
+    color: var(--ivy-navy);
     margin: 0 0 6px 0;
+    text-align: center;
 }
 
-.profile-title {
-    font-size: 15px;
+.profile-degree {
+    font-size: 13.5px;
     font-weight: 600;
-    color: #0f2d5a;
-    margin: 0 0 12px 0;
+    color: var(--ivy-blue);
+    margin: 0 0 10px 0;
+    text-align: center;
 }
 
-.profile-affiliation {
-    font-size: 14px;
-    color: #5a6a7e;
-    line-height: 1.4;
+.profile-org {
+    font-size: 13px;
+    color: #64748b;
+    text-align: center;
+    line-height: 1.45;
     margin-bottom: 20px;
     padding-bottom: 16px;
-    border-bottom: 1px solid #eef2f6;
+    border-bottom: 1px solid var(--ivy-border);
 }
 
-.profile-contact {
+/* Icon 联系按钮栏 */
+.social-links {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
     margin-bottom: 24px;
 }
 
-.contact-btn {
+.social-icon {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    padding: 6px 14px;
-    font-size: 13px;
-    font-weight: 500;
-    color: #0f2d5a;
-    background: #f0f4f9;
-    border-radius: 6px;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: #f1f5f9;
+    color: var(--ivy-navy);
+    border-radius: 50%;
+    font-size: 16px;
     text-decoration: none;
     transition: all 0.2s ease;
 }
 
-.contact-btn:hover {
-    background: #0f2d5a;
+.social-icon:hover {
+    background: var(--ivy-navy);
     color: #ffffff;
+    transform: translateY(-2px);
 }
 
-.profile-interests {
-    text-align: left;
+/* Sidebar 小工具区 */
+.sidebar-widget {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--ivy-border);
 }
 
-.profile-interests h3 {
-    font-size: 14px;
+.widget-title {
+    font-size: 12px;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: #8c9ba5;
-    margin-bottom: 10px;
+    letter-spacing: 0.8px;
+    color: #94a3b8;
+    margin-bottom: 12px;
 }
 
-.profile-interests ul {
+.interest-tags {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 13.5px;
-    color: #34495e;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
 }
 
-.profile-interests li {
-    padding: 4px 0;
-    position: relative;
-    padding-left: 14px;
+.interest-tags li {
+    font-size: 12px;
+    font-weight: 500;
+    background: #eff6ff;
+    color: #1e40af;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid #dbeafe;
 }
 
-.profile-interests li::before {
-    content: "•";
-    color: #0f2d5a;
-    position: absolute;
-    left: 0;
-    font-weight: bold;
+/* 教育经历列表 */
+.edu-timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 12.5px;
 }
 
-/* 右侧 Main Content */
-.academic-content {
-    flex: 1;
+.edu-timeline li {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.edu-degree {
+    font-weight: 600;
+    color: var(--ivy-dark);
+}
+
+.edu-school {
+    color: #64748b;
+}
+
+.edu-detail {
+    color: #94a3b8;
+    font-style: italic;
+}
+
+/* 右侧 Main Sections */
+.ivy-main {
     min-width: 0;
 }
 
-.section-block {
-    background: #ffffff;
-    padding: 28px 32px;
+.ivy-section {
+    background: var(--ivy-card-bg);
+    border: 1px solid var(--ivy-border);
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-    border: 1px solid #eef2f6;
+    padding: 32px 36px;
     margin-bottom: 28px;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
 }
 
-.section-title {
-    font-size: 20px;
+.ivy-heading {
+    font-family: var(--font-serif);
+    font-size: 22px;
     font-weight: 700;
-    color: #0f2d5a;
+    color: var(--ivy-navy);
     margin-top: 0;
-    margin-bottom: 18px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #eef2f6;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f1f5f9;
     position: relative;
 }
 
-.section-title::after {
+.ivy-heading::after {
     content: "";
     position: absolute;
     bottom: -2px;
     left: 0;
-    width: 50px;
+    width: 45px;
     height: 2px;
-    background: #0f2d5a;
+    background: var(--ivy-navy);
 }
 
-.section-body {
+.ivy-bio-text {
     font-size: 15.5px;
-    line-height: 1.7;
-    color: #34495e;
+    color: var(--ivy-body);
+    line-height: 1.75;
 }
 
-.section-body p {
-    margin-bottom: 12px;
+.ivy-bio-text p {
+    margin-bottom: 14px;
 }
 
-/* News List */
-.news-list {
+/* News 列表美式简洁风 */
+.ivy-news-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
 }
 
-.news-item {
+.ivy-news-item {
     display: flex;
+    align-items: baseline;
     gap: 16px;
     font-size: 14.5px;
 }
 
-.news-date {
-    font-weight: 600;
-    color: #0f2d5a;
-    background: #eef4fc;
-    padding: 2px 8px;
+.ivy-news-badge {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--ivy-navy);
+    background: #f1f5f9;
+    padding: 3px 10px;
     border-radius: 4px;
     white-space: nowrap;
-    height: fit-content;
+    border: 1px solid #e2e8f0;
 }
 
-.news-text {
-    color: #4a5568;
+.ivy-news-content {
+    color: #334155;
 }
 
-/* Research Grid */
-.research-grid {
+/* Research Thrusts Cards */
+.ivy-research-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 16px;
+    gap: 18px;
 }
 
-.research-card {
+.ivy-research-card {
     background: #f8fafc;
-    padding: 18px;
+    border: 1px solid #e2e8f0;
     border-radius: 8px;
-    border-left: 4px solid #0f2d5a;
+    padding: 20px;
+    transition: all 0.2s ease;
 }
 
-.research-card h4 {
-    margin: 0 0 8px 0;
+.ivy-research-card:hover {
+    border-color: #cbd5e1;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+}
+
+.card-icon {
+    font-size: 20px;
+    color: var(--ivy-navy);
+    margin-bottom: 10px;
+}
+
+.ivy-research-card h3 {
     font-size: 15px;
-    color: #1a2530;
+    font-weight: 600;
+    color: var(--ivy-dark);
+    margin: 0 0 8px 0;
 }
 
-.research-card p {
-    margin: 0;
+.ivy-research-card p {
     font-size: 13.5px;
     color: #64748b;
-    line-height: 1.5;
+    margin: 0;
+    line-height: 1.55;
 }
 
-.text-muted {
-    color: #8c9ba5;
-    font-style: italic;
+/* Publications Block */
+.ivy-pub-placeholder {
+    background: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
 }
 
-.link-more {
-    display: inline-block;
-    margin-top: 10px;
-    color: #0f2d5a;
-    font-weight: 600;
+.pub-note {
+    color: #64748b;
     font-size: 14px;
+    margin: 0 0 16px 0;
+}
+
+.pub-note i {
+    margin-right: 6px;
+    color: var(--ivy-navy);
+}
+
+.ivy-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    background: var(--ivy-navy);
+    color: #ffffff !important;
+    border-radius: 6px;
+    font-size: 13.5px;
+    font-weight: 500;
     text-decoration: none;
+    transition: all 0.2s ease;
 }
 
-.link-more:hover {
-    text-decoration: underline;
+.ivy-link-btn:hover {
+    background: #0f172a;
+    transform: translateY(-1px);
 }
 
-/* 响应式支持（手机屏自适应单栏） */
-@media (max-width: 868px) {
-    .academic-container {
-        flex-direction: column;
+/* 响应式 Mobile 适配 */
+@media (max-width: 900px) {
+    .ivy-grid {
+        grid-template-columns: 1fr;
         gap: 24px;
     }
     
-    .academic-sidebar {
-        flex: 1 1 100%;
-        width: 100%;
+    .ivy-sidebar {
         position: static;
+    }
+    
+    .avatar-frame {
+        width: 180px;
+        height: 230px;
     }
 }
