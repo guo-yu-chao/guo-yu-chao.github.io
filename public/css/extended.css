@@ -137,6 +137,16 @@ header.header a:hover {
     line-height: 1.5;
 }
 
+.advisor-link {
+    color: var(--brand-accent);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.advisor-link:hover {
+    text-decoration: underline;
+}
+
 /* 联系链接图标按钮 */
 .contact-links-row {
     display: flex;
@@ -216,7 +226,7 @@ header.header a:hover {
     color: #334155;
 }
 
-/* 2. 下方主内容区 Sections (纯白质感卡片，向下滚动时盖住衬底背景) */
+/* 2. 下方主内容区 Sections */
 .main-sections-container {
     display: flex;
     flex-direction: column;
@@ -334,37 +344,52 @@ header.header a:hover {
     line-height: 1.5;
 }
 
-/* Publications 占位符 */
-.pub-placeholder-box {
-    background: #f8fafc;
-    border: 1px dashed #cbd5e1;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
+/* Publication 样式 */
+.pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.pub-placeholder-box p {
+.pub-item {
+    display: flex;
+    gap: 12px;
+    font-size: 14.5px;
+    line-height: 1.6;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #e2e8f0;
+}
+
+.pub-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.pub-num {
+    font-weight: 700;
+    color: var(--brand-navy);
+}
+
+.pub-journal {
+    color: #475569;
+}
+
+.pub-status {
     color: #64748b;
-    font-size: 14px;
-    margin: 0 0 14px 0;
+    font-style: italic;
 }
 
-.view-all-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 7px 16px;
-    background: var(--brand-navy);
-    color: #ffffff !important;
-    border-radius: 6px;
-    font-size: 13.5px;
-    font-weight: 500;
+.pub-doi-link {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 13px;
+    color: var(--brand-accent);
     text-decoration: none;
-    transition: all 0.2s ease;
+    font-weight: 500;
 }
 
-.view-all-btn:hover {
-    background: #0f172a;
+.pub-doi-link:hover {
+    text-decoration: underline;
 }
 
 /* 响应式 Mobile 适配 */
