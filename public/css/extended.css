@@ -1,5 +1,5 @@
 /* ======================================================
-   Academic Homepage Styling with Hero Banner Effect
+   Academic Homepage Styling with Full-Page Substrate Background
    ====================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap');
@@ -10,7 +10,7 @@
     --brand-accent: #0056b3;
     --text-dark: #1e293b;
     --text-body: #334155;
-    --bg-main: #f8fafc;
+    --bg-main: #eef2f6;
     --card-bg: #ffffff;
     --border-color: #e2e8f0;
     --font-serif: 'Merriweather', Georgia, serif;
@@ -24,14 +24,16 @@ body {
     line-height: 1.7;
     font-size: 15px;
     -webkit-font-smoothing: antialiased;
+    position: relative;
+    min-height: 100vh;
 }
 
-/* 顶部通用 Header 导航条 (半透明/固定) */
+/* 顶部通用 Header 导航条 (深蓝半透明 + 模糊) */
 header.header {
-    background: rgba(20, 40, 80, 0.95) !important;
-    backdrop-filter: blur(8px);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1) !important;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+    background: rgba(20, 40, 80, 0.96) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -47,44 +49,48 @@ header.header a:hover {
     color: #93c5fd !important;
 }
 
-/* 顶部背景 Banner 图（不滚动时露出一部分，向下滚动时被白底推平盖住） */
-.top-banner-hero {
-    width: 100%;
-    height: 220px;
-    background: linear-gradient(rgba(15, 30, 60, 0.35), rgba(15, 30, 60, 0.45)), url('/images/banner.jpg');
+/* 全局沉浸式山水衬底背景 (Fixed Substrate Background)
+   固定在页面底层，左右露出山水风貌，中间卡片滚动时覆盖滑动 */
+.full-page-landscape-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(15, 25, 45, 0.25), rgba(15, 25, 45, 0.35)), url('/images/banner.jpg');
     background-size: cover;
-    background-position: center 35%;
+    background-position: center center;
     background-repeat: no-repeat;
-    margin-top: 0;
+    z-index: -1;
 }
 
 .main {
     max-width: 1040px !important;
     margin: 0 auto !important;
-    padding: 0 20px 40px 20px !important;
+    padding: 40px 20px 60px 20px !important;
 }
 
 .academic-page-container {
     width: 100%;
     position: relative;
-    margin-top: -90px; /* 核心：让 Profile Card 向上向上浮动，露出一半 Banner 背景图 */
     z-index: 10;
 }
 
-/* 1. 顶部 Header Card：左侧正方形大头像 + 右侧个人简介与教育背景 */
+/* 1. 顶部 Header Card：白底浮动卡片（左右漏出背景山水） */
 .profile-header-card {
-    background: var(--card-bg);
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(12px);
     border: 1px solid var(--border-color);
-    border-radius: 14px;
-    padding: 32px;
+    border-radius: 16px;
+    padding: 36px;
     display: flex;
     gap: 36px;
     align-items: flex-start;
-    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
     margin-bottom: 28px;
 }
 
-/* 左侧正方形头像框 (大尺寸 250px x 250px) */
+/* 左侧正方形头像框 (250px x 250px 大尺寸) */
 .avatar-square-frame {
     width: 250px;
     height: 250px;
@@ -210,7 +216,7 @@ header.header a:hover {
     color: #334155;
 }
 
-/* 2. 下方主内容区 Sections */
+/* 2. 下方主内容区 Sections (纯白质感卡片，向下滚动时盖住衬底背景) */
 .main-sections-container {
     display: flex;
     flex-direction: column;
@@ -218,11 +224,12 @@ header.header a:hover {
 }
 
 .content-card {
-    background: var(--card-bg);
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(12px);
     border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 30px 36px;
-    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
+    border-radius: 14px;
+    padding: 32px 38px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
 .card-heading {
@@ -362,14 +369,6 @@ header.header a:hover {
 
 /* 响应式 Mobile 适配 */
 @media (max-width: 768px) {
-    .top-banner-hero {
-        height: 160px;
-    }
-
-    .academic-page-container {
-        margin-top: -60px;
-    }
-
     .profile-header-card {
         flex-direction: column;
         align-items: center;
