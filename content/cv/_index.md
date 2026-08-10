@@ -24,7 +24,7 @@ You can preview or download my full Curriculum Vitae in PDF format below:
 
 - **B.Sc. in Chemistry** (2019 – 2023)  
   *Northeast Agricultural University*  
-  Advisor: Prof. Yingjiao Li (李英娇教授)
+  Advisor: Assoc. Prof. Yingjiao Li (李颖娇副教授)
 
 ---
 

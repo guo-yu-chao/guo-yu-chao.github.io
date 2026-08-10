@@ -24,7 +24,7 @@ My research focuses on **polymer mechanochemistry** and **polymer network topolo
 
 - **B.Sc. in Chemistry** (2019 – 2023)  
   *Northeast Agricultural University*  
-  Advisor: Prof. Yingjiao Li (李颖娇教授)
+  Advisor: Assoc. Prof. Yingjiao Li (李颖娇副教授)
 
 ## Research Interests
 
