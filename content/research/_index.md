@@ -3,24 +3,23 @@ title: "Research"
 draft: false
 ---
 
-# Research
+# Research Overview
 
 My research focuses on understanding how polymer network topology regulates force transmission and mechanochemical activation, with the goal of developing tougher and more functional elastomeric materials.
 
+---
+
 ## Research Areas
 
-### Polymer Mechanochemistry
-
-Understanding force-induced chemical reactions in polymeric materials.
-
----
-
-### Polymer Network Topology Regulation
-
-Investigating how crosslinks and chain entanglements influence force transmission and mechanophore activation.
+### ⚛️ Polymer Mechanochemistry
+Understanding force-induced chemical bond cleavage and mechanophore activation pathways in polymeric architectures under mechanical stress.
 
 ---
 
-### Toughening of Elastomers
+### 🕸️ Network Topology Engineering
+Manipulating crosslink structures, chain entanglements, and spatial network architecture to dictate stress distribution and force propagation.
 
-Developing high-performance elastomers through topology engineering and mechanochemical strategies.
+---
+
+### 🛡️ Toughening of Elastomers
+Developing resilient, damage-reporting, and self-healing elastomeric materials through topology engineering and mechanochemical strategies.
