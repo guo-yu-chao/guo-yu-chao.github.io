@@ -50,7 +50,7 @@ weight = 40
 [[menu.main]]
 identifier = "cv"
 name = "CV"
-url = "/CV.pdf"
+url = "/cv/"
 weight = 50
 
 [params.assets]

@@ -1,47 +1,37 @@
 ---
 title: "Curriculum Vitae"
 draft: false
+disableAnchoredHeadings: true
 ---
 
-# Curriculum Vitae
+# Yu-Chao Guo
 
-You can preview or download my full Curriculum Vitae in PDF format below:
-
-📄 **[Download CV (PDF)](/files/CV.pdf)**
-
----
-
-## Education
-
-- **Ph.D. Candidate in Chemical Engineering** (2026 – Present)  
-  *Xi'an Jiaotong University*, School of Chemical Engineering and Technology  
-  Advisor: [Prof. Hang Zhang (张航教授)](https://gr.xjtu.edu.cn/hangzhang/)
-
-- **M.Sc. in Chemistry (Polymer Chemistry & Physics)** (2023 – 2026)  
-  *Jilin University*, State Key Laboratory of Supramolecular Structure and Materials  
-  Advisor: Prof. Wenke Zhang (张文科教授)  
-  Thesis: *Visualizing Stress Transfer in Polymer Networks via Mechanophore Activation*
-
-- **B.Sc. in Chemistry** (2019 – 2023)  
-  *Northeast Agricultural University*  
-  Advisor: Assoc. Prof. Yingjiao Li (李颖娇副教授)
+**Ph.D. Student in Polymer Materials**
+*School of Chemical Engineering and Technology, Xi'an Jiaotong University*
+**Email**: [yuchaoguo@stu.xjtu.edu.cn](mailto:yuchaoguo@stu.xjtu.edu.cn)
 
 ---
 
-## Research Publications
+### Education
 
-1. **Ma, Zhao-Yu**, **Lu, Wan**, **Guo, Yu-Chao**, and **Li, Ying-Jiao**†.  
-   *"Crystal structure of 2,2-dichloro-1-(4-chloro-1H-indol-1-yl)ethan-1-one, C10H6Cl3NO"*  
-   *Zeitschrift für Kristallographie - New Crystal Structures*, 237(4), 2022, 593-594.  
-   [DOI: 10.1515/ncrs-2022-0117](https://doi.org/10.1515/ncrs-2022-0117)
+* **Ph.D. in Chemical Engineering and Technology** (2026 – Present)
+  *Xi'an Jiaotong University*
+  Advisor: Prof. Hang Zhang
 
-2. **Guo, Yu-Chao**, **Ma, Ziwen**, and **Zhang, Wenke**†.  
-   *"Visualizing Stress Transfer in Polymer Networks via Mechanophore Activation"*  
-   *(Manuscript in preparation)*
+* **M.Sc. in Supramolecular Structure and Materials** (2023 – 2026)
+  *Jilin University*
+  Advisor: Prof. Wenke Zhang
+
+* **B.Sc.** (2019 – 2023)
+  *Northeast Agricultural University*
+  Advisor: Assoc. Prof. Yingjiao Li
 
 ---
 
-## Honors & Academic Activities
+<br>
 
-- **2024** — Postgraduate Academic Scholarship, Jilin University.
-- **2023** — Attended National Postgraduate Summer Workshop on *"Supramolecular Chemistry and Self-Assembly"*, Jilin University.
+<div style="text-align: center; margin-top: 30px;">
+  <a href="/CV.pdf" target="_blank" style="display: inline-block; background-color: #142850; color: white; padding: 12px 30px; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: background-color 0.2s;">
+    📄 View / Download Full CV (PDF)
+  </a>
+</div>
